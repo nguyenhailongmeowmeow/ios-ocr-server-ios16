@@ -140,7 +140,7 @@ class OCREngine {
         request.recognitionLevel = (level == "Fast") ? .fast : .accurate
         request.usesLanguageCorrection = langCorrection
         
-        if #available(iOS 15.0, *) {
+        if #available(iOS 16.0, *) {
             request.automaticallyDetectsLanguage = autoDetect
         }
         
